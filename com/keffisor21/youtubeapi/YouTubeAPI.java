@@ -23,7 +23,7 @@ public class YouTubeAPI {
 		this.channel_id = channel_id;
 		this.type = type;
 		if(getAPIKey().equals("empty")) {
-			System.out.println("YouTube api key not provided in the function getAPIKey in YouTubeAPI class. For make the plugin work you should create one!");
+			System.out.println("YouTube api key not provided in the function getAPIKey in YouTubeAPI class. For make the library work you should create one!\nTutorial: https://www.youtube.com/watch?v=jykW3AX8pEE");
 			return;
 		}
 	}
