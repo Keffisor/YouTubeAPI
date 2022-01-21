@@ -1,7 +1,5 @@
 package com.keffisor21.youtubeapi;
 
-import org.bukkit.Bukkit;
-
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -25,7 +23,7 @@ public class YouTubeAPI {
 		this.channel_id = channel_id;
 		this.type = type;
 		if(getAPIKey().equals("empty")) {
-			Bukkit.getLogger().info("YouTube api key not provided in the config.yml file. For make the plugin work you should create one!");
+			System.out.println("YouTube api key not provided in the function getAPIKey in YouTubeAPI class. For make the plugin work you should create one!");
 			return;
 		}
 	}
@@ -81,7 +79,7 @@ public class YouTubeAPI {
 	}
 	
 	public String getAPIKey() {
-		return Main.getInstance().getConfig().getString("YouTube_API_Key");
+		return "empty";
 	}
 	
 	private void setupStatistics() {
