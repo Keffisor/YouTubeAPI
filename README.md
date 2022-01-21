@@ -1,7 +1,7 @@
 # YouTubeAPI
 Get the suscribers, total views and more of a YouTube channel in a very easy way
 
-<h1>Example of usage</h1>
+# Example of usage
 ```
 		YouTubeAPI youTubeAPI = new YouTubeAPI(channel_id, YouTubeChannelType.CHANNEL_ID);
 		System.out.println("Channel name: " + youTubeAPI.getChannelName());
