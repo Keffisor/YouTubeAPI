@@ -8,7 +8,7 @@ import java.net.URLConnection;
 public class Util {
 	public static String get(String part, String channel_id, String api_key, YouTubeChannelType type) {
 		try {
-			URL u = new URL("https://www.googleapis.com/youtube/v3/channels?part=" + part + (type.equals(YouTubeChannelType.CHANNEL_ID) ? "&id=" : "&forUsername=") + channel_id + "&fields=items&key=" + api_key);
+		    URL u = new URL("https://www.googleapis.com/youtube/v3/channels?part=" + part + (type.equals(YouTubeChannelType.CHANNEL_ID) ? "&id=" : "&forUsername=") + channel_id + "&fields=items&key=" + api_key);
 		    URLConnection conn = u.openConnection();
 		    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 		    StringBuffer buffer = new StringBuffer();
